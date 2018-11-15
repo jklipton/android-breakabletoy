@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="fill"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/tv_choose_identity"
+            android:contentDescription="@string/choose_transagotchi_identity"
+            android:fontFamily="monospace"
+            android:text="@string/choose_identity"
+            android:layout_weight="50"
+            android:gravity="bottom"
+            android:textSize="16sp"/>
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp">
+        <RadioButton
+                android:text="@string/rb_ftm_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_ftm_choice"
+                android:contentDescription="@string/alt_rb_ftm_choice"
+                android:fontFamily="monospace"
+                android:checked="true" android:layout_marginBottom="8dp"/>
+        <RadioButton
+                android:text="@string/rb_mtf_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_mtf_choice"
+                android:contentDescription="@string/alt_rb_mtf_choice"
+                android:fontFamily="monospace"
+                android:checked="false"/>
+    </RadioGroup>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:typeface="monospace"
+                android:text="@string/cancel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/btn_new_game_cancel" android:drawableStart="@drawable/ic_arrow_white_left"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_new_game_next"
+                android:drawableEnd="@drawable/ic_arrow_white_right"
+                android:fontFamily="monospace"
+                android:typeface="monospace"
+                android:text="@string/next"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"/>
+    </RelativeLayout>
+</LinearLayout>

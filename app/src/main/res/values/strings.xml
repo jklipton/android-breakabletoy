@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Transagotchi</string>
+    <string name="btn_new_game">Start Transition</string>
+    <string name="btn_continue_game">Continue Transition</string>
+    <string name="main_credits">built by <a href="http://jklipton.io">Jen Lipton</a>, co-created by Calvin Masterson</string>
+    <string name="alt_new_gotchi">Transagotchi Appearance</string>
+    <string name="choose_identity">Choose Transagotchi Identity:</string>
+    <string name="rb_ftm_choice">Female to Male</string>
+    <string name="rb_mtf_choice">Male to Female</string>
+    <string name="alt_rb_ftm_choice">Female to Male</string>
+    <string name="alt_rb_mtf_choice">Male to Female</string>
+    <string name="choose_transagotchi_identity">Choose Transagotchi Identity</string>
+    <string name="transagotchi_story_intro">Your Transagotchi\'s story:</string>
+    <string name="et_name_placeholder">\"Juju Bee\"</string>
+    <string name="family_support">Family Support:</string>
+    <string name="label_gotchi_name">Chosen Name:</string>
+    <string name="label_gotchi_support">Family Support:</string>
+    <string name="back">Back</string>
+    <string name="start">Start!</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" android:layout_gravity="fill"
+        android:orientation="vertical" android:weightSum="100">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/tv_context_intro"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:textSize="16sp" android:text="@string/transagotchi_story_intro" android:layout_weight="50"
+            />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_label_name"
+                android:fontFamily="monospace"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_weight="40"
+                android:text="@string/label_gotchi_name"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="6dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords|textPersonName"
+                android:hint="@string/et_name_placeholder"
+                android:singleLine="true"
+                android:fontFamily="monospace"
+                android:maxLength="25"
+                android:layout_marginEnd="6dp"
+                android:typeface="monospace"
+                android:textSize="14sp"
+                android:layout_weight="60"
+                android:id="@+id/et_gotchi_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_label_support"
+                android:fontFamily="monospace"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_weight="40"
+                android:text="@string/label_gotchi_support"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="6dp"/>
+        <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:entries="@array/array_family_support"
+                android:layout_weight="60"
+                android:id="@+id/sp_support"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_new_game_back"
+                android:fontFamily="monospace"
+                android:typeface="monospace"
+                android:text="@string/back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:drawableStart="@drawable/ic_arrow_white_left"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_new_game_start"
+                android:drawableEnd="@drawable/ic_arrow_white_right"
+                android:fontFamily="monospace"
+                android:typeface="monospace"
+                android:text="@string/start"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" android:id="@+id/tv_new_game_error"
+                android:layout_marginBottom="101dp" android:fontFamily="monospace"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"/>
+    </RelativeLayout>
+</LinearLayout>
